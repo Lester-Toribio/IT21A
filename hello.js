@@ -13,3 +13,6 @@ console.log("The sum of " + num1 + " and " + num2 + " is = " + sum);
 console.log("The difference between " + num1 + " - " + num2 +" is = " +  diff );
 console.log("The product of"+ num1 + " and " +num2 +"= " +prod); 
 console.log("The quotient of "+ num1+ "and "+num2 +"=" + quo);
+
+console.log("this is a lab/factorial branch");
+
