@@ -17,11 +17,27 @@ console.log("1. say hello");
 
    rl.question("enter your choice(1-3)", choice => {
 if (choice === "1"){
+  
 console.log("hello there");
 
    } else if (choice === "2"){
-    console.log("factorial");
 
+    console.log("factorial");
+   computeFactorial();
+   
+   }else if (choice === "3"){
+    console.log("Exiting program... Goodbye");
+    rl.close();
+   }else {
+    console.log("invalid choice. please try again");
+mainMenu();
+   }
+   }
+   )
+  }
+
+  function computeFactorial(){
+    
     rl.question("enter a number for factorial: ", (numstr) =>{
 let num = parseInt(numstr);
 
@@ -37,14 +53,5 @@ if(isNaN(num) || num<0){
 }
     });
    
-   }else if (choice === "3"){
-    console.log("Exiting program... Goodbye");
-    rl.close();
-   }else {
-    console.log("invalid choice. please try again");
-mainMenu();
-   }
-   }
-   )
   }
   mainMenu();
