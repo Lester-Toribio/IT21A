@@ -42,8 +42,9 @@ if(isNaN(num) || num<0){
     rl.close();
    }else {
     console.log("invalid choice. please try again");
-
+mainMenu();
    }
    }
    )
   }
+  mainMenu();
