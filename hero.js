@@ -9,6 +9,11 @@ class Hero {
     gethealth() {
         return this.#health;
 }
+getStats(){
+    console.log("Name: "+ this.name);
+     console.log("Health: "+ this.#health);
+ console.log("Attack: "+ this.attack);
+}
 }
 class Warrior extends Hero {
     useAbility() {
@@ -23,8 +28,25 @@ class Mage extends Hero {
     useAbility() {
         console.log(`${this.name} cast sarapness!`)
 }}
-const warrior = new Warrior("kingkong", 100, 10);
-warrior.useAbility();
+function performAbility(hero){
+    hero.useAbility();
+}
 
-const mage = new Mage("magic sarap", 80, 5, 50);
-mage.useAbility();
+
+
+const kingkong = new Warrior("kingkong", 100, 10);
+kingkong.useAbility();
+kingkong.getStats();
+
+const magicsarap  = new Mage("magic sarap", 80, 5, 50);
+magicsarap.useAbility();
+magicsarap.getStats();
+
+function performAbility(hero){
+    console.log("\n");
+    hero.useAbility();
+}
+
+
+performAbility(kingkong);
+performAbility(magicsarap);
